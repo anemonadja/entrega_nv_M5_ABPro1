@@ -1,34 +1,39 @@
-import Carousel from 'react-bootstrap/Carousel';
-import ExampleCarouselImage from 'components/ExampleCarouselImage';
+import React from 'react';
+import { Carousel } from 'react-bootstrap';
+import hospital2 from '../assets/hospital2.jpg';
+import hospital3 from '../assets/hospital3.jpg';
+import hospital4 from '../assets/hospital4.jpg';
 
-function CarruselReact() {
+
+const CarruselReact = () => {
   return (
     <Carousel>
       <Carousel.Item>
-        <ExampleCarouselImage text="First slide" />
+        <img className="d-block w-100" src={ hospital2 } alt="Primera" />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>Primera Imagen</h3>
+          <p>Descripción.</p>
         </Carousel.Caption>
       </Carousel.Item>
+
       <Carousel.Item>
-        <ExampleCarouselImage text="Second slide" />
+        <img className="d-block w-100" src={ hospital3 } alt="Segunda" />
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Segunda Imagen</h3>
+          <p>Descripción.</p>
         </Carousel.Caption>
       </Carousel.Item>
+      
       <Carousel.Item>
-        <ExampleCarouselImage text="Third slide" />
+        <img className="d-block w-100" src={ hospital4 } alt="Tercera" />
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+          <h3>Tercera Imagen</h3>
+          <p>Descripción.</p>
         </Carousel.Caption>
       </Carousel.Item>
+
     </Carousel>
   );
-}
+};
 
 export default CarruselReact;
