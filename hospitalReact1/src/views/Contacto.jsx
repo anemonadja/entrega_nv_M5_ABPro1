@@ -1,11 +1,13 @@
 import React from 'react'
-
+import FormularioReact from '../components/Formulario';
 
 
 const Contacto = () => {
+  return (
+    <div>
+      <FormularioReact />
+    </div>
+  );
+};
 
-    return (
-      <div>Contacto</div>
-    )
-}
 export default Contacto;
