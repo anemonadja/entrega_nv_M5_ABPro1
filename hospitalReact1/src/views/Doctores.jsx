@@ -8,7 +8,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 
-export const Doctores = () => {
+const Doctores = () => {
 
     const [doctores, setDoctores] = useState([]);
 
@@ -31,7 +31,7 @@ export const Doctores = () => {
 
 
       <Container>
-        <Row lg={3}>
+        <Row lg={5}>
         {doctores.map((doctor) => (
           <Col className='mb-3'>
             <Card style={{ width: "14rem" }} className='bg-info h-100'>

@@ -5,12 +5,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import NavbarReact from './components/Navbar';
 
-
 function App() {
 
   return (
     <Router>
       <NavbarReact />
+      <br></br>
       <Routes>
         <Route path="/" element={ <Home/> } />
         <Route path="/doctores" element={<Doctores/>} />
