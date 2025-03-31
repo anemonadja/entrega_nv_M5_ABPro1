@@ -1,8 +1,11 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔹 Se utiliza axios porque:
 
-Currently, two official plugins are available:
+- Es una solución más sencilla y rápida para manejar datos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Se tiene un mejor manejo de errores sin hacer comprobaciones adicionales.
+
+Trabajas con Node.js, ya que fetch no es nativo en versiones anteriores.
+
+Si alguna vez se necesita reducir el tamaño del proyecto o no requiere dependencias externas, se podría cambiar a fetch.
